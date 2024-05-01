@@ -1,0 +1,92 @@
+/* ####################################
+           SITON STYLES 
+####################################### */
+
+.swiper-custom-next.swiper-button-disabled,
+.swiper-custom-prev.swiper-button-disabled
+{
+  opacity: 0.2;
+  
+}
+
+/* Zoom In on hover */
+.vid-thumb {
+	overflow: hidden;
+  display: block;
+  width: auto;
+}
+
+.vid-thumb img{
+   display: block;
+}
+
+.swiper-slide:hover .desc{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+.vid-thumb img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.vid-thumb:hover img {
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
+}
+
+/* #####################
+      SWIPER STYLES
+#######################*/
+.swiper-container-videos .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  position: relative;
+  top: 0px;
+}
+
+.swiper-container-videos .swiper-slide a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1f2f3c;
+}
+@media only screen and (max-width: 800px) {
+  .swiper-container-videos .swiper-slide a {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+.swiper-container-videos  .selected.swiper-slide a .desc {
+  color: #721e2e;
+  font-weight: bold;
+}
+.swiper-container-videos  .selected {
+  border-bottom: 1px solid #c4c4c4;
+}
+/*  
+slidesPerView: "auto" so the width of each slide set by CSS */
+.swiper-container-videos .swiper-slide {
+  max-width: auto;
+  width: 36%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-container-videos .swiper-slide a .desc {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.swiper-container-videos .swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background: #b4234c;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
